@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>mission</title>
+<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		
+		<style>
+			body {background-image:url(https://previews.123rf.com/images/1stchoice/1stchoice1107/1stchoice110700089/10053934-co-conception-arri%C3%A8re-plan-vert-terre-avec-le-globe-et-le-monde-de-la-carte-.jpg);
+				
+				background-repeat:no-repeat;
+				background-size:cover;
+				color:#03cc03;
+				
+					}
+
+			#top {color:#03cc03;
+				background-color:;
+				margin-top:50px;
+				font-size:80px;
+				 font-family: "Times New Roman", Times, serif;}
+			
+			#git {margin-left:900px;
+				padding-down:100px;}
+
+			#con {color:green;
+				margin-left:50px;}
+		
+			#pro {color:green;
+				font-size:30px;}
+			
+			#qut {color:red;
+				margin-left:100px;}
+			* {
+			    box-sizing: border-box;
+			}
+
+			.column {
+			    float: left;
+			    width: 300px;
+			    height:250px;
+			    padding: 25px;
+			    
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+			    content: "";
+			    clear: both;
+			    display: table;
+			    margin-left:300px;
+			}
+			#table{color:black;
+				margin-left:300px;}
+			
+
+
+
+
+</style>
+	
+	</head>
+	<body>
+				<div id="top"><i><b>PRAKRITHI INNOVATIONS</b></i>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQztoDlty1Y1AezZkDRfnU_2FqvlaWZ9EWjUQjM_EqHUpz4490ozg" alt="not displayed" height='70' width='70'></div>
+				<div id="top1"><center><input type="text" placeholder="Search.."></p></center>
+				<p id="git"><a href="/login/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgIV5GGOMuQ_n4pgwxBsTr2-72zQR-t8h0Zg1Nqg4FYwhHMbQu" height="30" width="30"></a>
+<a href="/twitter/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsePDkh44-ysSvOzZn1C-s_S5quXk_lDIceymoTOaMsWGZzbJEJg" height="30" width="30"></a>
+<a href="/facebook/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fmcicCsQiMb-XRRxiCbDQ7i6mOBBiINxo1rf5vnuXrcRTYJc" height="30" width="30"></a></p></div>
+			
+			
+			
+			
+
+
+			<hr>
+			<div id="cat">
+				
+					<div class="container">
+						 <nav class="navbar navbar-inverse">
+				  		<div class="container-fluid">
+				    		<div class="navbar-header">
+				      		<a class="navbar-brand" href="home.html"></a>
+				    		</div>
+				    		<ul class="nav navbar-nav">
+				      		<li class="active"><a href="home.html">Home</a></li>
+				      		
+						<ul class="nav navbar-nav">
+				      		<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+				      		<li><a href="/profile/">company profile</a></li>
+				      		<li><a href="/mission/">our mission</a></li>
+						
+				      		
+				    		</ul>
+						</li>
+						<ul class="nav navbar-nav">
+				      		<li class="active"><a href="/gallery/">Gallery</a></li>
+<ul class="nav navbar-nav">
+				      		<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">product and services
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" >
+				      		<li><a href="/login11/">Kids corner,design & development</a></li>
+
+				      
+						
+				      		
+						
+						
+				     
+				    		</ul>
+						</li>
+						<ul class="nav navbar-nav">
+				      		<li class="active"><a href="/quality/">Quality Management</a></li>
+
+						<ul class="nav navbar-nav">
+				      		<li class="active"><a href="/contact/">Contact Us</a></li>
+				    		</ul>
+<ul class="nav navbar-nav navbar-right">
+		<li><a href="/login/"><span class="glyphicon glyphicon-user"></span>{{user.username}}
+	</a></li>
+	
+		<li><a href="/home2/"><span class="glyphicon glyphicon-log-in"></span>Logout
+		</a></li></ul>
+						</li>
+				  		</div>
+						</nav> 
+						
+						</ul>
+
+					
+					</div>
+				</div>
+			</div>
+		
+		
+		
+		<div id="pro"><center><b>KIDS CORNER</b></center></div><br><br>
+
+		<div id="table">
+				<table>
+					<table border="5">
+
+					
+					<center>
+					<tr>
+					<th colspan="5"><h1>product list</h1></th></tr>
+					<tr>
+					<th>pro_id</th>
+					<th>pro_name</th>
+					<th>pro_price</th>
+					<th>pro_details</th>
+					
+					</tr>
+					
+					{% for x in object_list %}
+					<tr>
+						<td>{{x.pro_id}}</td>
+						<td>{{x.pro_name}}</td>
+						
+						<td>{{x.pro_price}}</td>
+						<td>{{x.pro_details}}</td>
+						<td><a href="/payment/"><button>Buy</button></a></td>
+					</tr>
+					<br><br>
+							
+					
+						
+					{% endfor %}
+				</center>
+				</table>
+						
+
+
+</div>
+
+<br><br><hr>
+
+
+
+
+
+
+<br><br><hr>
+		
+
+				<div id="con"><h3>Contact us</h3>
+				<br><span class="glyphicon glyphicon-earphone"> 	9605089115</span>
+				<br><span class="glyphicon glyphicon envelop">Email id: bismibabuchinnu@gmail.com</span></p>
+				
+				  </div>
+	</body>
+</html>
+

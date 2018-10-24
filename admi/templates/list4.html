@@ -1,0 +1,30 @@
+<table>
+	<table border="1">
+
+	
+	<tr>
+	<th colspan="5"><h1>transactions list</h1></th></tr>
+	<tr>
+	
+	<th>bank_info</th>
+	<th>payment_amt</th>
+	<th>result</th>
+	
+	</tr>
+	
+	{% for x in object_list %}
+	<tr>
+		<td>{{x.user.username}}</td>
+
+		<td>{{x.user.tran_id}}</td>
+		<td>{{x.bank_info}}</td>
+		<td>{{x.payment_amt}}</td>
+		<td>{{x.result}}</td>
+	</tr>
+			
+	
+		
+	{% endfor %}
+
+</table>
+		
